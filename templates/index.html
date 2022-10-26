@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ranger Unand</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/unand.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href={{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }} type="text/css">
+  <link rel="stylesheet" href={{ url_for('static', filename='/css/main.css') }}  type="text/css">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/css/variables.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <h2>Rangers Unand<span>.</span></h2>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#home">Informasi</a></li>
+          <li><a class="nav-link scrollto" href="index.html#aplikasi">Aplikasi</a></li>
+          <li><a class="nav-link scrollto" href="index.html#team">Tim</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav><!-- .navbar -->
+
+      <a class="btn-getstarted scrollto" href="index.html#aplikasi">Mulai</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero-animated home" class="hero-animated d-flex align-items-center">
+    <div id="home" class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+      <img src="static/img/iris-classification.png" class="img-fluid animated">
+    
+      <h2 style="margin-bottom: 15px;">Aplikasi Iris Classification</h2>
+      <h5 style="color: #4797ff; font-family: Poppins; font-weight: 400;">prediksi spesies bunga iris menjadi lebih mudah dan akurat</h5>
+      <br>
+
+      <p style="text-align: justify;text-justify: inter-word; font-size: 18px; font-family: 'Poppins';">
+        Aplikasi ini dibuat untuk menentukan spesies dari bunga iris berdasarkan pengukuran panjang serta lebar 
+        dari <i>sepal</i> dan <i>petal</i> bunga. Anda cukup memberikan 4 nilai pengukuran untuk dapat mengetahui spesies dari bunga iris tersebut.
+        Keempat nilai pengukuran tersebut adalah panjang <i>petal</i>, lebar <i>petal</i>, panjang <i>sepal</i>,
+        dan lebar <i>sepal</i>. 
+      </p>
+
+      <h5 style="color: #4797ff; font-family: Poppins; font-weight: 400;">tiga spesies bunga Iris yang dapat diprediksi</h5>
+       <!-- ======= Featured Species ======= -->
+      <section style="margin-top: -30px;" id="featured-services" class="featured-services">
+        <div class="container">
+          <div class="row gy-4">
+
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-1-circle"></i></div>
+                <h4><a href="" class="stretched-link">Iris Setosa</a></h4>
+                <img src="static/img/iris_setosa.jpg" width="200px">
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-2-circle"></i></div>
+                <h4><a href="" class="stretched-link">Iris Versicolor</a></h4>
+                <img src="static/img/iris_versicolor.jpg" width="200px">
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-3-circle"></i></div>
+                <h4><a href="" class="stretched-link">Iris Virginica</a></h4>
+                <img src="static/img/iris_virginica.jpg" width="200px">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End Featured Services Section -->
+
+      <div style="margin-top: -25px;" class="d-flex">
+        <a href="#aplikasi" class="btn-get-started scrollto">Mulai Prediksi</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- ======= Aplikasi Section ======= -->
+    <section id="aplikasi" class="aplikasi">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Aplikasi</h2>
+          <p class="mb-2" style="text-align: center; font-family: 'Poppins'; font-size: 18px;">
+            Anda dapat mencoba untuk melakukan prediksi species bunga iris sendiri!
+          </p>
+            <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              petunjuk penggunaan  <i class="bi bi-info-circle-fill"></i>
+            </button>
+        </div>
+
+        <div class="row g-4 g-lg-5" data-aos="zoom-out" data-aos-delay="200">
+          <div class="card col-lg-8 bg-light py-4 px-3 rounded">
+            <div class="aplikasi-img" align="center" >
+              <h5 class="mb-4" style="color: #4797ff; font-family: Poppins; font-weight: 400;">Nilai pengukuran bunga</h5>
+              <form>
+                <div class="form-group">
+                  <!-- Input Slider untuk Nilai Pengukuran Bunga Iris -->
+                  <div class="slidecontainer mb-3">
+                    <label style="font-family: Poppins; font-weight: 300;"  for="range_sepal_length">Sepal Length (cm) </label>&nbsp;&rarr;&nbsp;
+                    <span id="rangeVal_sepal_length"></span>
+                    <input type="range" min="4.3" max="7.9" step="0.05" value="5.0" class="slider" id="range_sepal_length" 
+                     onInput="$('#rangeVal_sepal_length').html($(this).val())">
+                  </div>
+
+                  <div class="slidecontainer mb-3">
+                    <label style="font-family: Poppins; font-weight: 300;"  for="range_sepal_width">Sepal Width (cm) </label>&nbsp;&rarr;&nbsp;
+                    <span id="rangeVal_sepal_width"></span>
+                    <input type="range" min="2.0" max="4.4" step="0.05" value="3.0" class="slider" id="range_sepal_width" 
+                    onInput="$('#rangeVal_sepal_width').html($(this).val())">
+                  </div>
+
+                  <div class="slidecontainer mb-3">
+                    <label style="font-family: Poppins; font-weight: 300;"  for="range_petal_length">Petal Length (cm) </label>&nbsp;&rarr;&nbsp;
+                    <span id="rangeVal_petal_length"></span>
+                    <input type="range" min="1.0" max="6.9" step="0.05" value="3.5" class="slider" id="range_petal_length" 
+                    onInput="$('#rangeVal_petal_length').html($(this).val())">
+                  </div>
+
+                  <div class="slidecontainer mb-4">
+                    <label style="font-family: Poppins; font-weight: 300;" for="range_petal_width">Petal Width (cm) </label>&nbsp;&rarr;&nbsp;
+                    <span id="rangeVal_petal_width"></span>
+                    <input type="range" min="0.1" max="2.5" step="0.05" value="1.0" class="slider" id="range_petal_width" 
+                    onInput="$('#rangeVal_petal_width').html($(this).val())">
+                  </div>
+
+                  <h6 class="mb-3" style="font-family: Poppins; font-weight: 400;">Klik salah satu tombol untuk melakukan prediksi</h6>
+
+                  <!-- Tombol Prediksi -->
+                  <div class="btn-prediksi d-flex justify-content-around mt-3">
+                    <button type="submit" id="prediksi_rf" class="btn btn-primary btn-sm">Prediksi Random Forest</button>
+                    <button type="submit" id="prediksi_gaussian" class="btn btn-primary btn-sm">Prediksi Gaussian</button>
+                    <button type="submit" id="prediksi_knn" class="btn btn-primary btn-sm">Prediksi KNN</button>
+                    <button type="submit" id="prediksi_svm" class="btn btn-primary btn-sm">Prediksi SVM</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <!-- Bagian Halaman untuk Hasil Prediksi -->
+            <div id="hasil_prediksi" align="center">
+                <!-- Hasil Prediksi akan ditampilkan di sini-->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End aplikasi Section -->
+
+    <!-- Modal Petunjuk Penggunaan-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Petunjuk penggunaan aplikasi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p style="text-align: justify;text-justify: inter-word; font-size: 16px; font-family: 'Poppins';">
+              1. Inputkan nilai pengukuran bunga yang Anda cermati mulai dari panjang dan lebar <i>sepal</i> serta <i>petal</i>.<br>
+              2. Klik salah satu tombol prediksi sesuai model algoritma yang Anda inginkan. <br>Pada aplikasi ini digunakan 4 model yaitu:<br>   - Decision Tree<br>   - KNearest Neighbors<br>   - NaiveBayes Gaussian<br>    - K-Means<br>
+              3. Tunggu hingga hasil prediksi spesies bunga Iris Anda tampil.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Mengerti</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Tim</h2>
+          <p style="text-align: center; font-family: 'Poppins'; font-size: 18px;">
+            Anggota kami yang berperan penting dalam pengembangan aplikasi ini
+          </p>
+        </div>
+
+        <div class="row gy-5">
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="static/img/team/sapik-rbg.jpeg" class="img-fluid" style="height: 425px;" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>M. Syafiq Asyraf</h4>
+                <span>Universitas Andalas</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="static/img/team/fadhil-rbg1.jpeg" class="img-fluid"  style="height: 425px;" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/fadhil-elrizanda/"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>Fadhil Elrizanda</h4>
+                <span>Universitas Andalas</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="static/img/team/nunu-rbg.jpg" class="img-fluid"  style="height: 425px;" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>Nurhalimah</h4>
+                <span>Universitas Andalas</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="static/img/team/Latifatuzikra-rbg.jpg"  style="height: 425px;" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>Latifatuzikra S</h4>
+                <span>Universitas Andalas</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-legal text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Rangers Unand</span></strong>. All Rights Reserved
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="https://mobile.twitter.com/official_unand" target=”_blank” class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://id-id.facebook.com/unandofficial/" target=”_blank” class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/unandofficial/" target=”_blank” class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://unand.ac.id/" target=”_blank” class="google-plus"><i class="bi bi-google"></i></a>
+          <a href="https://id.linkedin.com/school/unand/" target=”_blank” class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Script for Slider -->
+  <script>
+    var slider_sepal_length = document.getElementById("range_sepal_length");
+    var slider_sepal_width = document.getElementById("range_sepal_width");
+    var slider_petal_length = document.getElementById("range_petal_length");
+    var slider_petal_width = document.getElementById("range_petal_width");
+    var val_sepal_length = document.getElementById("rangeVal_sepal_length");
+    var val_sepal_width = document.getElementById("rangeVal_sepal_width");
+    var val_petal_length = document.getElementById("rangeVal_petal_length");
+    var val_petal_width = document.getElementById("rangeVal_petal_width");
+    val_sepal_length.innerHTML = slider_sepal_length.value;
+    val_sepal_width.innerHTML = slider_sepal_width.value;
+    val_petal_length.innerHTML = slider_petal_length.value;
+    val_petal_width.innerHTML = slider_petal_width.value;
+    
+    slider_sepal_length.oninput = function() { val_sepal_length.innerHTML = this.value; }
+    slider_sepal_width.oninput = function() { val_sepal_width.innerHTML = this.value; }
+    slider_petal_length.oninput = function() { val_petal_length.innerHTML = this.value; }
+    slider_petal_width.oninput = function() { val_petal_width.innerHTML = this.value; }
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src={{ url_for('static', filename='/vendor/bootstrap/js/jquery_3.6.0.min.js') }} ></script>
+	<script src={{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.min.js') }} ></script>
+  <!-- <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+  <script src="static/js/client_side.js"></script>
+
+</body>
+
+</html>
